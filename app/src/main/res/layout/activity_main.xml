@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/f1"
+        android:id="@+id/com"
        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="140sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,21 +21,18 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/com"
+            android:id="@+id/f1"
             android:hint="gmail.com"
             android:padding="16sp"
             android:background="@drawable/ramka"
             android:layout_width="match_parent"
              android:layout_height="wrap_content"/>
-
-
-
-
-
 </com.google.android.material.textfield.TextInputLayout>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/theme"
-    app:layout_constraintTop_toBottomOf="@+id/f1"
+    app:layout_constraintTop_toBottomOf="@+id/com"
         app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="16sp"
@@ -43,7 +40,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/f2"
             android:hint="Theme"
@@ -51,11 +47,6 @@
             android:background="@drawable/ramka"
             android:layout_width="match_parent"
              android:layout_height="wrap_content"/>
-
-
-
-
-
 </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -68,7 +59,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/f3"
             android:hint="Message"

@@ -15,33 +15,31 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextInputEditText gmail, them, mass;
+    private TextInputEditText gmail, them, mess;
     private Button Send;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        gmail = findViewById(R.id.com);
+        gmail = findViewById(R.id.f1);
         them = findViewById(R.id.f2);
-        mass = findViewById(R.id.f3);
+        mess = findViewById(R.id.f3);
         Send = findViewById(R.id.f4);
 
         Send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("mailto:" + gmail.getText().toString()));
-                intent.putExtra(Intent.EXTRA_SUBJECT, them.getText().toString());
-                intent.putExtra(Intent.EXTRA_TEXT, mass.getText().toString());
+                Intent intent = new Intent(Intent.ACTION_VIEW
+                , Uri.parse("mailto:" + gmail.getText().toString()));
+                intent.putExtra(Intent.EXTRA_SUBJECT,them.getText().toString());
+                intent.putExtra(Intent.EXTRA_TEXT,mess.getText().toString());
                 startActivity(intent);
+            }
+        });
 
 
             }
-
-        });
-    }
-
 
         }
 
